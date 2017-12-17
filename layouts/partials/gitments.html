@@ -1,0 +1,24 @@
+<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<aside id=comments>
+    <div>
+        <h2> Comments </h2>
+    </div>
+    <div id="container"></div>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <!--
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    -->
+    <script src="https://res.cloudinary.com/imroc/raw/upload/v1513440650/blog/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: 'imroc', //github account
+            repo: 'imroc.github.io', // github repo
+            oauth: {
+                client_id: 'd05b8f959b3111c6fb63',
+                client_secret: 'f30ef76ea0050ed731ace76f7fbf684ae5d28fbc',
+            },
+        })
+        gitment.render('container')
+    </script>
+</aside>
+</div>
